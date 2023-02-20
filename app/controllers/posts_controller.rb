@@ -20,4 +20,5 @@ class PostsController < ApplicationController
         @post.save
     
         redirect_to "/posts"
+      end
 end
