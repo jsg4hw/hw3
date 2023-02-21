@@ -3,9 +3,6 @@ class PostsController < ApplicationController
         @posts = Post.all
     end
 
-    def show
-        @post = Post.find_by({ "id" => params["id"] })
-      end
     
       def new
         @post = Post.new
@@ -19,6 +16,6 @@ class PostsController < ApplicationController
         @post["posted_on"] = params["post"]["posted_on"]
         @post.save
     
-        redirect_to "/posts"
+        redirect_to "/places"
       end
 end
